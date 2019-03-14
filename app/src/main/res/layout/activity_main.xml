@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical"
+    android:paddingLeft="5sp"
+    android:paddingTop="10sp"
+    android:paddingRight="5sp"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/player1Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player 1:"
+        android:textColor="@color/Title"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="109dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:columnCount="5">
+
+        <ImageView
+            android:id="@+id/card1"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <ImageView
+            android:id="@+id/card2"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/card3"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/card4"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/card5"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/player2Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player2"
+        android:textColor="@color/Title"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="106dp"
+        android:layout_marginTop="5dp"
+        android:columnCount="5">
+
+        <ImageView
+            android:id="@+id/card6"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/card7"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/card8"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/card9"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/card10"
+            android:layout_width="@dimen/cardSize"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/back" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/dealButton"
+                android:layout_width="205dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="DEAL"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Player1ResultLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Player 1:"
+                android:textColor="@color/Title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p1card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p1card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p1card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p1card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p1card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/compareButton"
+                android:layout_width="200dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="COMPARE"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Player2ResultLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Player 2:"
+                android:textColor="@color/Title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p2card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p2card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p2card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p2card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p2card5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/handValuesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Hand Values:"
+            android:textColor="@color/Title"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/p1HandValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p2HandValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Content"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Result:"
+            android:textColor="@color/Title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ameResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/Content"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
